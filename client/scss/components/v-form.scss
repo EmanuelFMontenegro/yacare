@@ -1,0 +1,32 @@
+.wiki-form {
+
+  &.theme--light {
+    background-color: mc('grey', '50');
+  }
+
+  .v-text-field--outline {
+    .v-input__slot {
+      background-color: #fff !important;
+      border-color: mc('grey', '300') !important;
+      border-radius: 7px;
+
+      @at-root .theme--dark & {
+        background-color: #fff!important;
+        border-color: #fff!important;
+
+        .v-label.v-label--active.primary--text {
+          color: #fff!important;
+        }
+      }
+    }
+    &.v-input--is-focused .v-input__slot {
+      color: #fff!important;
+    }
+
+    @at-root .theme--dark & {
+      .v-icon.primary--text {
+        color: #fff!important;
+      }
+    }
+  }
+}

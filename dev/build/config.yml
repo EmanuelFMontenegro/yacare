@@ -1,0 +1,20 @@
+puerto : 3000
+enlazarIP : 0.0.0.0
+base de datos :
+  tipo : $(DB_TYPE)
+  servidor : ' $(DB_HOST ) '
+  puerto : $(DB_PORT)
+  usuario : ' $(DB_USER) '
+  pase : ' $(DB_PASS) '
+  db : $(DB_NOMBRE)
+  almacenamiento : $(DB_FILEPATH)
+  ssl : $(DB_SSL)
+SSL :
+  habilitado : $(SSL_ACTIVE)
+  puerto : 3443
+  proveedor : letsencrypt
+  dominio : $(LETSENCRYPT_DOMAIN)
+  correo electrónico del suscriptor : $(LETSENCRYPT_EMAIL)
+nivel de registro : $ (LOG_LEVEL: información )
+formato de registro : $ ( LOG_FORMAT : predeterminado)
+ha : $(HA_ACTIVE)
