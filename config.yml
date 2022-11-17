@@ -8,8 +8,7 @@
 # Port the server should listen to
 # ---------------------------------------------------------------------
 
-port: 3000
-
+port: 190.192.91.28
 # ---------------------------------------------------------------------
 # Database
 # ---------------------------------------------------------------------
@@ -24,11 +23,11 @@ db:
   type: postgres
 
   # PostgreSQL / MySQL / MariaDB / MS SQL Server only:
-  host: localhost
-  port: 5433
-  user: postgres
-  pass: ema555
-  db: yaca
+  host: ec2-44-206-197-71.compute-1.amazonaws.com
+  port: 5432
+  user: alqifflwyctxeb
+  pass: 01c8a08d8d8d5f9f34341f0e9fbd2b58fe80e9f2a6e0d10411702b0311311372
+  db: d1m85deurd0f2g
   ssl: false
 
   # Optional - PostgreSQL / MySQL / MariaDB only:
@@ -47,7 +46,7 @@ db:
   schema: public
 
   # SQLite only:
-  storage:
+  storage: path/to/database.sqlite
 
 #######################################################################
 # ADVANCED OPTIONS                                                    #
